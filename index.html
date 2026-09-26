@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dr. Noureen 🎂</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080a0f;
+    color: #f5f5f5;
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+    position: relative;
+    z-index: 2;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background:
+        radial-gradient(circle at 15% 15%, rgba(220,38,38,.18), transparent 30%),
+        radial-gradient(circle at 85% 65%, rgba(168,85,247,.14), transparent 30%),
+        radial-gradient(circle at 50% 100%, rgba(245,158,11,.10), transparent 35%),
+        #080a0f;
+}
+
+.glow {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .22;
+    pointer-events: none;
+    z-index: -1;
+    animation: drift 9s ease-in-out infinite;
+}
+
+.glow.one {
+    background: #ef4444;
+    left: -80px;
+    top: 15%;
+}
+
+.glow.two {
+    background: #a855f7;
+    right: -80px;
+    top: 55%;
+    animation-delay: 3s;
+}
+
+@keyframes drift {
+    0%,100% { transform: translate(0,0); }
+    50% { transform: translate(30px,-35px); }
+}
+
+/* TEXT */
+
+.label {
+    color: #f87171;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h3 {
+    font-size: clamp(38px, 8vw, 70px);
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+}
+
+.hero .medical {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,.15);
+    background: rgba(255,255,255,.05);
+    padding: 9px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 13vw, 130px);
+    letter-spacing: -6px;
+    line-height: .85;
+    background: linear-gradient(120deg,#fff,#fca5a5,#f9a8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero h2 {
+    margin-top: 30px;
+    font-size: clamp(20px,5vw,35px);
+    font-weight: 500;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto 35px;
+    color: #999;
+    line-height: 1.8;
+}
+
+.btn {
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    background: linear-gradient(100deg,#dc2626,#9333ea);
+    box-shadow: 0 15px 40px rgba(220,38,38,.2);
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.03);
+}
+
+.scroll {
+    position: absolute;
+    bottom: 25px;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+/* MEDICAL REPORT */
+
+.report {
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 24px;
+    overflow: hidden;
+    background: rgba(255,255,255,.045);
+    backdrop-filter: blur(15px);
+}
+
+.report-head {
+    background: #b91c1c;
+    padding: 14px 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.report-body {
+    padding: 30px;
+}
+
+.report-title {
+    font-size: clamp(28px,6vw,50px);
+    margin-bottom: 25px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 12px;
+}
+
+.info {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+.info span {
+    display: block;
+    color: #777;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.info strong {
+    font-size: 17px;
+}
+
+.diagnosis {
+    margin-top: 20px;
+    padding: 20px;
+    border-left: 3px solid #ef4444;
+    background: rgba(239,68,68,.06);
+    line-height: 1.7;
+}
+
+/* PULL-UP */
+
+.pullup {
+    text-align: center;
+}
+
+.big-number {
+    font-family: 'Space Grotesk';
+    font-size: clamp(100px,25vw,230px);
+    font-weight: 700;
+    line-height: .8;
+    background: linear-gradient(120deg,#ef4444,#f97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pullup-sub {
+    color: #999;
+    font-size: 17px;
+    max-width: 600px;
+    margin: 30px auto;
+    line-height: 1.8;
+}
+
+.fake-chart {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 7px;
+    height: 120px;
+    margin: 30px 0;
+}
+
+.bar {
+    width: 28px;
+    height: 35px;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to top,#dc2626,#f87171);
+}
+
+.bar:nth-child(2) { height: 45px; }
+.bar:nth-child(3) { height: 38px; }
+.bar:nth-child(4) { height: 43px; }
+.bar:nth-child(5) { height: 39px; }
+.bar:nth-child(6) { height: 42px; }
+.bar:nth-child(7) { height: 40px; }
+
+.recommendation {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 17px 23px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,.1);
+    background: rgba(255,255,255,.05);
+}
+
+/* RAGE */
+
+.rage {
+    display: grid;
+    gap: 15px;
+}
+
+.rage-card {
+    padding: 28px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.rage-card h4 {
+    font-size: 23px;
+    margin-bottom: 9px;
+}
+
+.rage-card p {
+    color: #999;
+    line-height: 1.7;
+}
+
+/* BHAKARWADI */
+
+.bhakarwadi {
+    text-align: center;
+}
+
+.code-name {
+    font-family: 'Space Grotesk';
+    font-size: clamp(45px,10vw,100px);
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: linear-gradient(100deg,#f59e0b,#f97316,#ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bhakar-text {
+    max-width: 650px;
+    margin: 25px auto;
+    color: #aaa;
+    line-height: 1.8;
+}
+
+.detection {
+    margin: 35px auto 0;
+    max-width: 500px;
+    padding: 25px;
+    border: 1px solid rgba(245,158,11,.25);
+    border-radius: 20px;
+    background: rgba(245,158,11,.05);
+}
+
+.scan {
+    margin-top: 15px;
+    color: #fbbf24;
+    font-family: monospace;
+}
+
+/* MATCHA */
+
+.matcha-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.matcha-card {
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.matcha-card .emoji {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.matcha-card p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+/* ROAST */
+
+.roast-list {
+    display: grid;
+    gap: 12px;
+}
+
+.roast {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 23px;
+    border-radius: 17px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+.roast-num {
+    color: #f87171;
+    font-weight: 700;
+}
+
+.roast h4 {
+    margin-bottom: 6px;
+    font-size: 19px;
+}
+
+.roast p {
+    color: #888;
+    line-height: 1.6;
+}
+
+/* EMOTIONAL */
+
+.emotional {
+    text-align: center;
+}
+
+.emotional .quiet {
+    color: #777;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.message {
+    max-width: 700px;
+    margin: auto;
+    font-size: clamp(18px,4vw,25px);
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.message strong {
+    color: white;
+}
+
+/* FINAL */
+
+.final {
+    text-align: center;
+}
+
+.final h3 {
+    font-size: clamp(45px,10vw,100px);
+    background: linear-gradient(110deg,#fff,#fca5a5,#f9a8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.final p {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #999;
+    line-height: 1.8;
+}
+
+/* MUSIC */
+
+.music {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 50;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(20,20,25,.85);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    backdrop-filter: blur(12px);
+}
+
+.music.active {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    50% { transform: scale(1.12); }
+}
+
+/* CONFETTI */
+
+.confetti {
+    position: fixed;
+    top: -20px;
+    width: 7px;
+    height: 13px;
+    z-index: 100;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:650px) {
+
+    section {
+        padding: 70px 17px;
+    }
+
+    .info-grid,
+    .matcha-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .report-body {
+        padding: 22px;
+    }
+
+    .code-name {
+        letter-spacing: 1px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="glow one"></div>
+<div class="glow two"></div>
+
+<button class="music" id="musicButton" onclick="toggleMusic()">♫</button>
+
+
+<!-- HERO -->
+
+<section class="hero" id="top">
+
+<div class="container">
+
+<div class="medical">
+CONFIDENTIAL MEDICAL BIRTHDAY REPORT
+</div>
+
+<h1>NOUREEN</h1>
+
+<h2>Doctor. Roaster. Menace.</h2>
+
+<p>
+One more year has passed, and somehow the medical community
+has still failed to explain how one person can be this qualified
+and this annoying at the same time.
+</p>
+
+<button class="btn" onclick="startExperience()">
+OPEN THE MEDICAL FILE →
+</button>
+
+</div>
+
+<div class="scroll">
+PATIENT HISTORY BELOW ↓
+</div>
+
+</section>
+
+
+<!-- MEDICAL FILE -->
+
+<section>
+
+<div class="container">
+
+<div class="label">01 / PATIENT RECORD</div>
+
+<h3>The Medical File.</h3>
+
+<div class="report">
+
+<div class="report-head">
+🩺 CONFIDENTIAL — AUTHORIZED PERSONNEL ONLY
+</div>
+
+<div class="report-body">
+
+<div class="report-title">
+Patient: Noureen Anaya Ali
+</div>
+
+<div class="info-grid">
+
+<div class="info">
+<span>Profession</span>
+<strong>MBBS Doctor</strong>
+</div>
+
+<div class="info">
+<span>Current Status</span>
+<strong>Still dangerous</strong>
+</div>
+
+<div class="info">
+<span>Primary Skill</span>
+<strong>Roasting people</strong>
+</div>
+
+<div class="info">
+<span>Secondary Skill</span>
+<strong>Rage baiting</strong>
+</div>
+
+<div class="info">
+<span>Gym Status</span>
+<strong>Under observation</strong>
+</div>
+
+<div class="info">
+<span>Known Associate</span>
+<strong>Bhakarwadi</strong>
+</div>
+
+</div>
+
+<div class="diagnosis">
+
+<strong>FINAL DIAGNOSIS:</strong><br>
+
+Noureen-itis. A rare condition characterized by excessive
+sarcasm, professional-level roasting, unnecessary provocation,
+and an unusually strong desire to test everyone's patience.
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PULL UP -->
+
+<section class="pullup">
+
+<div class="container">
+
+<div class="label">02 / FITNESS DEPARTMENT</div>
+
+<h3>The One-Pull-Up Incident.</h3>
+
+<div class="big-number">1</div>
+
+<div class="pullup-sub">
+
+Yes. One.
+
+Despite having a gym membership, medical knowledge,
+and presumably functional upper-body anatomy, the patient
+has consistently demonstrated an impressive commitment
+to keeping this number exactly where it is.
+
+</div>
+
+<div class="fake-chart">
+
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+<div class="bar"></div>
+
+</div>
+
+<div class="recommendation">
+
+<strong>MEDICAL RECOMMENDATION:</strong><br><br>
+
+Continue exercising.<br>
+Continue believing in yourself.<br>
+Attempt pull-up number two when emotionally prepared.
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- RAGE BAIT -->
+
+<section>
+
+<div class="container">
+
+<div class="label">03 / PSYCHIATRY DEPARTMENT</div>
+
+<h3>Professional Rage Baiter.</h3>
+
+<div class="rage">
+
+<div class="rage-card">
+
+<h4>Step 01 — Say Something Insane</h4>
+
+<p>
+Preferably something just controversial enough to make
+someone question their life choices.
+</p>
+
+</div>
+
+<div class="rage-card">
+
+<h4>Step 02 — Wait</h4>
+
+<p>
+Observe the reaction with the calmness of someone who
+absolutely knew what was going to happen.
+</p>
+
+</div>
+
+<div class="rage-card">
+
+<h4>Step 03 — Enjoy The Damage</h4>
+
+<p>
+At this point, Noureen is no longer participating in
+the conversation. She is conducting an experiment.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BHAKARWADI -->
+
+<section class="bhakarwadi">
+
+<div class="container">
+
+<div class="label">04 / CLASSIFIED CODE NAME</div>
+
+<h3>The Bhakarwadi Files.</h3>
+
+<div class="code-name">
+BHAKARWADI
+</div>
+
+<p class="bhakar-text">
+
+For reasons that remain unexplained by modern science,
+Noureen decided that my actual name was simply too boring.
+
+So she chose <strong>Bhakarwadi.</strong>
+
+And unfortunately, the nickname stuck.
+
+</p>
+
+<div class="detection">
+
+<strong>🔎 BHAKARWADI DETECTION SYSTEM</strong>
+
+<div class="scan">
+Scanning environment...<br>
+Scanning subjects...<br>
+Scanning unnecessary insults...<br>
+<br>
+TARGET DETECTED: BHAKARWADI<br>
+<br>
+STATUS: NO ESCAPE AVAILABLE.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MATCHA -->
+
+<section>
+
+<div class="container">
+
+<div class="label">05 / LIFESTYLE ANALYSIS</div>
+
+<h3>Known Substances.</h3>
+
+<div class="matcha-grid">
+
+<div class="matcha-card">
+<div class="emoji">🍵</div>
+<strong>Matcha</strong>
+<p>Occasionally detected.</p>
+</div>
+
+<div class="matcha-card">
+<div class="emoji">🏋️</div>
+<strong>Gym</strong>
+<p>Membership confirmed.</p>
+</div>
+
+<div class="matcha-card">
+<div class="emoji">🔥</div>
+<strong>Rage Bait</strong>
+<p>Dangerously consistent.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ROAST -->
+
+<section>
+
+<div class="container">
+
+<div class="label">06 / PERSONAL OBSERVATIONS</div>
+
+<h3>Clinical Findings.</h3>
+
+<div class="roast-list">
+
+<div class="roast">
+<div class="roast-num">01</div>
+<div>
+<h4>She roasts everyone.</h4>
+<p>
+But somehow gets personally offended when the same
+technology is used against her.
+</p>
+</div>
+</div>
+
+<div class="roast">
+<div class="roast-num">02</div>
+<div>
+<h4>She is a doctor.</h4>
+<p>
+Which means she can diagnose actual medical conditions,
+but apparently cannot diagnose the condition of her own jokes.
+</p>
+</div>
+</div>
+
+<div class="roast">
+<div class="roast-num">03</div>
+<div>
+<h4>She goes to the gym.</h4>
+<p>
+Evidence exists. The pull-up department remains skeptical.
+</p>
+</div>
+</div>
+
+<div class="roast">
+<div class="roast-num">04</div>
+<div>
+<h4>She rage baits people for entertainment.</h4>
+<p>
+Some people watch movies. Noureen watches people lose
+their patience.
+</p>
+</div>
+</div>
+
+<div class="roast">
+<div class="roast-num">05</div>
+<div>
+<h4>She calls me Bhakarwadi.</h4>
+<p>
+There is absolutely no justification for this.
+And yet here we are.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EMOTIONAL -->
+
+<section class="emotional">
+
+<div class="container">
+
+<div class="quiet">
+OKAY. ENOUGH ROASTING.
+</div>
+
+<h3>One serious minute.</h3>
+
+<div class="message">
+
+Behind all the roasting, rage baiting, ridiculous conversations
+and the deeply questionable decision to call me <strong>Bhakarwadi</strong>...
+
+you've genuinely become someone whose presence makes life
+a little more fun.
+
+You've given me enough material to complain about for years,
+but you've also given me plenty of reasons to be grateful
+for having you around.
+
+So today, the roast department is temporarily closed.
+
+<strong>Happy Birthday, Doctor. ❤️</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+<div class="container">
+
+<div class="label">07 / FINAL REPORT</div>
+
+<h3>Happy Birthday,<br>Dr. Noureen! 🎂</h3>
+
+<p>
+
+May this year bring you happiness, good health,
+great memories, successful rage baiting,
+and, most importantly...
+
+<strong>your second consecutive pull-up.</strong>
+
+You've got this.
+
+Probably.
+
+Maybe.
+
+We'll review the evidence next year.
+
+</p>
+
+<button class="btn" onclick="createConfetti()">
+🎉 CLOSE THE CASE
+</button>
+
+</div>
+
+</section>
+
+
+<script>
+
+/* MUSIC */
+
+let audioContext;
+let isPlaying = false;
+let timers = [];
+
+const notes = {
+    C4: 261.63,
+    D4: 293.66,
+    E4: 329.63,
+    F4: 349.23,
+    G4: 392.00,
+    A4: 440.00,
+    B4: 493.88,
+    C5: 523.25,
+    D5: 587.33,
+    E5: 659.25,
+    G5: 783.99
+};
+
+function playNote(note, start, duration) {
+
+    const oscillator = audioContext.createOscillator();
+    const gain = audioContext.createGain();
+
+    oscillator.type = "sine";
+    oscillator.frequency.value = notes[note];
+
+    oscillator.connect(gain);
+    gain.connect(audioContext.destination);
+
+    gain.gain.setValueAtTime(0, start);
+    gain.gain.linearRampToValueAtTime(.13, start + .02);
+    gain.gain.exponentialRampToValueAtTime(.001, start + duration);
+
+    oscillator.start(start);
+    oscillator.stop(start + duration);
+}
+
+function playBirthdayMelody() {
+
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+    const melody = [
+        ["C4",.00],["C4",.22],["D4",.44],["C4",.66],
+        ["F4",.88],["E4",1.10],
+        ["C4",1.55],["C4",1.77],["D4",1.99],
+        ["C4",2.21],["G4",2.43],["F4",2.65],
+        ["C4",3.10],["C4",3.32],["C5",3.54],
+        ["A4",3.76],["F4",3.98],["E4",4.20],["D4",4.42],
+        ["B4",4.86],["B4",5.08],["A4",5.30],
+        ["F4",5.52],["G4",5.74],["F4",5.96]
+    ];
+
+    melody.forEach(item => {
+        playNote(item[0], audioContext.currentTime + item[1], .20);
+    });
+
+    timers.push(setTimeout(() => {
+        if (isPlaying) {
+            playBirthdayMelody();
+        }
+    }, 7000));
+}
+
+function toggleMusic() {
+
+    const button = document.getElementById("musicButton");
+
+    if (!isPlaying) {
+
+        isPlaying = true;
+        button.innerHTML = "❚❚";
+        button.classList.add("active");
+
+        playBirthdayMelody();
+
+    } else {
+
+        isPlaying = false;
+        button.innerHTML = "♫";
+        button.classList.remove("active");
+
+        timers.forEach(clearTimeout);
+        timers = [];
+
+        if (audioContext) {
+            audioContext.close();
+            audioContext = null;
+        }
+    }
+}
+
+
+/* EXPERIENCE */
+
+function startExperience() {
+
+    document.querySelector("section:nth-of-type(2)")
+        .scrollIntoView({behavior:"smooth"});
+
+    createConfetti();
+
+}
+
+
+/* CONFETTI */
+
+function createConfetti() {
+
+    for(let i = 0; i < 100; i++) {
+
+        const piece = document.createElement("div");
+
+        piece.className = "confetti";
+
+        piece.style.left = Math.random() * 100 + "vw";
+
+        piece.style.background =
+            ["#ef4444","#f59e0b","#a855f7","#ec4899","#60a5fa","#34d399"]
+            [Math.floor(Math.random() * 6)];
+
+        piece.style.animationDuration =
+            (Math.random() * 3 + 2) + "s";
+
+        piece.style.animationDelay =
+            Math.random() * 1.5 + "s";
+
+        piece.style.transform =
+            `rotate(${Math.random() * 360}deg)`;
+
+        document.body.appendChild(piece);
+
+        setTimeout(() => piece.remove(), 6000);
+    }
+}
+
+</script>
+
+</body>
+</html>
